@@ -3,6 +3,12 @@
 import os
 import sys
 
+# Load environment variables from env.py
+from pathlib import Path
+env_path = Path(__file__).resolve().parent / "env.py"
+if env_path.exists():
+    exec(open(env_path).read())
+
 
 def main():
     """Run administrative tasks."""

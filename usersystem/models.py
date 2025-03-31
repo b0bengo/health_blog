@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
-class UserProfile(models.model):
+class UserProfile(models.Model):
     """
     This model extends the default Django User model to include additional fields.
     The user field is a OneToOneField that links to the User model for that specific user.
